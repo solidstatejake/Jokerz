@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Joke from "./Joke";
 
 import '../stylesheets/css/main.css'
+
 const uuid = require('uuid');
 
 const log = console.log;
@@ -39,15 +40,15 @@ class JokeList extends Component {
   handleVote(id, delta) {
     this.setState(currentState => ({
       jokes: currentState.jokes.map(joke => {
-        return joke.id === id ? {...joke, votes: joke.votes + delta } : joke
+        return joke.id === id ? { ...joke, votes: joke.votes + delta } : joke
       })
     }))
   }
 
   render() {
     const jokes = this.state.jokes.map((joke) => {
-      return <Joke key={joke.id}
-                   id={joke.id}
+      return <Joke key={ joke.id }
+                   id={ joke.id }
                    joke={ joke.joke }
                    votes={ joke.votes }
                    upvote={ () => this.handleVote(joke.id, 1) }
@@ -66,13 +67,13 @@ class JokeList extends Component {
                src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg"
                alt=""/>
 
-          <button className='JokeList__button-fetch-jokes'>New Jokes</button>
+          <button className='JokeList__sidebar--button'>New Jokes</button>
 
         </div>
         <div className='JokeList__jokes'>
-          <div>
-            { jokes }
+          <div className="JokeList__jokes--container">
 
+            { jokes }
           </div>
         </div>
       </div>
