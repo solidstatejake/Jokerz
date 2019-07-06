@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Bahianita&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.App {
+  align-items: center;
+  background-image: linear-gradient(135deg, #b3e5fc 0%, #b3e5fc 50%, #f06292 50%, #f06292 100%);
+  color: #78909C;
+  display: flex;
+  height: 100vh;
+  justify-content: center; }
+
+.JokeList {
+  display: flex;
+  height: 80%;
+  width: 80%; }
+  .JokeList__sidebar {
+    align-items: center;
+    background-color: #9575CD;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.3), inset 0 0 25px #7E57C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    z-index: 100; }
+    .JokeList__sidebar--title {
+      color: #FFF;
+      font-family: 'Bahianita', cursive;
+      font-size: 6rem;
+      font-weight: 300;
+      letter-spacing: 1rem;
+      margin: 2rem; }
+      .JokeList__sidebar--title span {
+        font-weight: 700; }
+    .JokeList__sidebar--img {
+      border-radius: 50%;
+      box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.1);
+      width: 50%; }
+  .JokeList__jokes {
+    align-self: center;
+    background-color: white;
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    height: 90%;
+    overflow: scroll;
+    width: 70%; }

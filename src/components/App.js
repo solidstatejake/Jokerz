@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import JokeList from "./components/JokeList";
+import '../stylesheets/css/main.css';
+import JokeList from "../components/JokeList";
 
 function App() {
   return (
