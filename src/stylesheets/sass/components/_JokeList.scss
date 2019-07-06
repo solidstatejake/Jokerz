@@ -30,6 +30,7 @@
     &--img {
       border-radius: 50%;
       box-shadow:    0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
       width:         50%;
     }
   }
@@ -43,4 +44,5 @@
     overflow:         scroll;
     width:            70%;
   }
+
 }
