@@ -107,6 +107,7 @@ body {
     cursor: pointer;
     text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3); }
   .Joke__text {
+    font-size: 1.6rem;
     justify-self: center;
     margin-right: 1rem; }
   .Joke__emoji {

@@ -33,13 +33,14 @@
 
     &--upvote,
     &--downvote {
-      cursor: pointer;
+      cursor:      pointer;
       text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
     }
 
   }
 
   &__text {
+    font-size:    1.6rem;
     justify-self: center;
     margin-right: 1rem;
 
@@ -52,7 +53,7 @@
 
     &--container {
       margin-left: auto;
-      padding: 1rem 2rem 1rem 1rem;
+      padding:     1rem 2rem 1rem 1rem;
     }
   }
 

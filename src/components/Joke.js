@@ -82,7 +82,7 @@ class Joke extends Component {
 
         </div>
         <div className="Joke__emoji--container">
-          <i className={`Joke__emoji em ${this.getEmoji()}`}></i>
+          <i className={ `Joke__emoji em ${this.getEmoji()}` }></i>
 
         </div>
       </div>
